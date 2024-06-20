@@ -49,7 +49,6 @@ h2 {
 }
 
 body {
-	background-color: lightblue;
 	padding: 0;
 	margin: 0;
 	background-color: lightblue;
@@ -69,4 +68,8 @@ body {
 .nav:hover .direct {
 	display: inline-block;
 	color: darkred;
+}
+
+h3 {
+	font-size: 1.5vh;
 }
