@@ -13,4 +13,3 @@ function toBack() {
 			}
 	}
 }
-but.onclick = toBack;
