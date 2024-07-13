@@ -1,0 +1,42 @@
+body {
+	background-color: white;
+}
+
+.page {
+	width: 20em;
+	height: 20em;
+	display: block;
+	position: absolute;
+	top: 10em;
+	left: 5em;
+	box-shadow: 0px 0px 2px black;
+}
+
+.slideIn {
+	animation: slideIn;
+	animation-duration: 0.5s;
+}
+.slideOut {
+	animation: slideOut;
+	animation-duration: 0.5s;
+}
+
+@keyframes slideIn {
+	0% {;
+		left: 5em;
+	}
+
+	100% {
+		left: 35em;
+	}
+}
+
+@keyframes slideOut {
+	0% {;
+		left: 35em;
+	}
+
+	100% {
+		left: 5em;
+	}
+}
