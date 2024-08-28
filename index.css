@@ -5,20 +5,22 @@ body {
 }
 
 #next {
-	width: 30em;
-	height: 31em;
+	width: 8em;
+	height: 2em;
 	display: block;
-	position: absolute;
-	top: 12em;
-	left: 1em;
-	z-index: 1000;
-	background-color: null;
+	border: 0.1em solid black;
+	border-radius: 0.5em;
+	background-color: lightgrey;
+}
+
+.buttext {
+	margin: 0;
 }
 
 .page {
 	display: block;
 	position: absolute;
-	top: 15em;
+	top: 20em;
 	left: 5em;
 	box-shadow: 0px 0px 2px black;
 	padding: 1em 1em 4em 1em;
@@ -28,6 +30,12 @@ body {
 .polaroid {
 	width: 20em;
 	height: 20em;
+	user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .polaroidShadow {
