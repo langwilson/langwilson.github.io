@@ -1,0 +1,160 @@
+body {
+    perspective: 80em;
+    background-color: red;
+}
+
+.cubeface {
+    width: 20vw;
+    height: 20vw;    
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    animation-name: fade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+}
+
+.octface {
+    width: 10vw;
+    height: 13vw;    
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.oct {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 50vh;
+    left: 50vw;
+    transform: rotateX(20deg);
+    transform-style: preserve-3d;
+    animation-name: octrevolve;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.cube {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 50vh;
+    left: 50vw;
+    transform: rotateX(20deg);
+    transform-style: preserve-3d;
+    animation-name: revolve;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes revolve {
+    0% {transform: rotateX(-15deg) rotatey(0deg);}
+    50% {transform: rotateX(-15deg) rotatey(-360deg);}
+    100% {transform: rotateX(-15deg) rotatey(-720deg);}
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes octrevolve {
+    0% {transform: rotateX(-15deg) rotatey(0deg);}
+    50% {transform: rotateX(-15deg) rotatey(360deg);}
+    100% {transform: rotateX(-15deg)rotatey(720deg);}
+}
+
+#north {
+    transform: translate3d(-10vw,-10vw,10vw) rotatey(0deg);
+}
+
+#south {
+    transform: translate3d(-10vw,-10vw,-10vw) rotatey(180deg);
+}
+
+#west {
+    transform: translate3d(0vw,-10vw,0vw) rotatey(-270deg);
+}
+
+#east {
+    transform: translate3d(-20vw,-10vw,0vw) rotatey(-90deg);
+}
+
+#up {
+    transform: translate3d(-10vw,-20vw,0vw) rotateX(90deg);
+}
+
+#down {
+    transform: translate3d(-10vw,0vw,0vw) rotateX(-90deg);
+}
+
+
+
+#north2 {
+    transform: translate3d(-10vw,-10vw,10vw) rotatey(180deg);
+}
+
+#south2 {
+    transform: translate3d(-10vw,-10vw,-10vw) rotatey(0deg);
+}
+
+#west2 {;
+    transform: translate3d(0vw,-10vw,0vw) rotatey(270deg);
+}
+
+#east2 {
+    transform: translate3d(-20vw,-10vw,0vw) rotatey(90deg);
+}
+
+#up2 {
+    transform: translate3d(-10vw,-20vw,0vw) rotateX(-90deg);
+}
+
+#down2 {
+    transform: translate3d(-10vw,0vw,0vw) rotateX(90deg);
+}
+
+
+
+
+
+
+
+#nu {
+    transform: translate3d(-5vw,-12vw,2.5vw) rotatey(180deg) rotatex(-22.62deg);
+}
+
+#su {
+    transform: translate3d(-5vw,-12vw,-2.5vw) rotatey(-180deg)  rotatex(22.62deg);
+}
+
+#wu {
+    transform: translate3d(-2.5vw,-12vw,0vw) rotatey(-90deg) rotatex(-22.62deg);
+}
+
+#eu {
+    transform: translate3d(-7.5vw,-12vw,0vw) rotatey(-90deg) rotatex(22.62deg);
+}
+
+
+#nd {
+    transform: translate3d(-5vw,0vw,2.5vw) rotatey(180deg) rotatex(202.62deg);
+}
+
+#sd {
+    transform: translate3d(-5vw,0vw,-2.5vw) rotatey(-180deg)  rotatex(-202.62deg);
+}
+
+#wd {
+    transform: translate3d(-2.5vw,0vw,0vw) rotatey(-90deg) rotatex(-157.38deg);
+}
+
+#ed {
+    transform: translate3d(-7.5vw,0vw,0vw) rotatey(-90deg) rotatex(157.38deg);
+}
